@@ -1,5 +1,5 @@
 ﻿using System.IO;
-using System;
+
 using System.Threading;
 using System.Linq;
 using System.Text;
@@ -20,7 +20,7 @@ namespace EU_tagallamai
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+        
+    }
     }
 }
