@@ -32,6 +32,16 @@ namespace EU_tagallamai
             }
             Console.WriteLine($"4.feladat: 2007-ben {csatlakozas} csatlakozott országok ");
 
+            foreach (var i in eupa)
+            {
+                if (i.orszag == "Magyarország")
+                {
+                    Console.WriteLine($"5.feladat : magyarorszag csatlakozasanak datuma {i.dátum}");
+                }
+            }
+
+
+
         }
     }
 }
