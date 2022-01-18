@@ -9,6 +9,19 @@ namespace EU_tagallamai
     class eu
     {
         public string orszag { get; set; }
-        public int MyProperty { get; set; }
+        public DateTime dátum { get; set; }
+
+       
+        public eu(string sör)
+        {
+            string[] s = sör.Split(';');
+            orszag = s[0];
+            dátum =Convert.ToDateTime(s[1]);
+        
+        
+        }
+
+
+
     }
 }

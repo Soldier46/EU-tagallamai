@@ -20,7 +20,11 @@ namespace EU_tagallamai
     {
         static void Main(string[] args)
         {
-        
+            List<eu> eupa = new List<eu>();
+            foreach (var i in File.ReadAllLines("EUcsatlakozas.txt"))
+            {
+                eupa.Add(new eu(i));
+            }
     }
     }
 }
