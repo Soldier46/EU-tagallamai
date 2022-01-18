@@ -19,6 +19,19 @@ namespace EU_tagallamai
                 eupa.Add(new eu(i));
             }
             Console.WriteLine($"3.feladat: eu tagállamainak a száma { eupa.Count}db");
-    }
+
+
+            
+            int csatlakozas = 0;
+            foreach (var i in eupa)
+            {
+                if (i.dátum.Date.Year == 2007)
+                {
+                    csatlakozas++;
+                }
+            }
+            Console.WriteLine($"4.feladat: 2007-ben {csatlakozas} csatlakozott országok ");
+
+        }
     }
 }
