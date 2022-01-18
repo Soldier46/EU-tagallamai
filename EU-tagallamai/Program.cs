@@ -48,7 +48,13 @@ namespace EU_tagallamai
                 }
                
             }
-
+            foreach (var i in eupa)
+            {
+                if (i.dátum.Date.Year == 2013)
+                {
+                    Console.WriteLine($"7.feladat : utoljára csatlakozott ország {i.orszag}");
+                }
+            }
 
         }
     }
