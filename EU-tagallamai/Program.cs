@@ -39,7 +39,15 @@ namespace EU_tagallamai
                     Console.WriteLine($"5.feladat : magyarorszag csatlakozasanak datuma {i.dátum}");
                 }
             }
-
+            foreach (var i in eupa)
+            {
+                if (i.dátum.Date.Month == 05)
+                {
+                    Console.WriteLine($"6.feladat : Májusban történt csatlakozás");
+                    break;
+                }
+               
+            }
 
 
         }
