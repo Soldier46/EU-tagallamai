@@ -53,6 +53,7 @@ namespace EU_tagallamai
                 if (i.dátum.Date.Year == 2013)
                 {
                     Console.WriteLine($"7.feladat : utoljára csatlakozott ország {i.orszag}");
+
                 }
             }
 
