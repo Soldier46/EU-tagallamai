@@ -57,6 +57,28 @@ namespace EU_tagallamai
                 }
             }
 
+            Dictionary<int, int> faszsetudja = new Dictionary<int, int>();
+
+            foreach (var i in eupa)
+            {
+                if (faszsetudja.ContainsKey(i.dátum.Year))
+                {
+                    faszsetudja[i.dátum.Year]++;
+
+                }
+                else
+                {
+                    faszsetudja.Add(i.dátum.Year,1);
+
+                }
+            }
+            Console.WriteLine("8.feladat : statisztika");
+
+            foreach (var i in faszsetudja)
+            {
+                Console.WriteLine($"\t{i.Key} - {i.Value} ország");
+            }
+
         }
     }
 }
